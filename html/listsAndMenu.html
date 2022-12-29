@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>lists</title>    
+    <!-- unordered lists are used to create menus and sidebars, and ordered lists are used for normal things-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            height: 100px;
+            background-color: black;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        nav a:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+    </nav>
+    <!-- unordered list -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol type="" start="">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <!-- description list -->
+    <dl>
+        <dt>cofee</dt>
+        <dd>hot drink</dd>
+
+        <dt>item 2</dt>
+        <dd>description 2</dd>
+
+        <dt>item 3</dt>
+        <dd>description 3</dd>
+    </dl>
+</body>
+</html>

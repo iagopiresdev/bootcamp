@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs and Forms</title>
+    <link rel="website icon" type="png"
+        href="downloads/html-5.png">
+    <style>
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- searchbar with button-->
+    <p>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" id="gsearch" name="a" placeholder="Search on google">
+            <input type="submit" value="search">
+        </form>
+    </p>
+    <p>
+        <!-- Button with a window popup-->
+        <button onclick="alert('Hello World')">Click Me</button>
+
+        <!-- normal buttons -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </p>
+    <p>
+        <label>
+            Nome:
+        </label>
+    </p>
+
+    <!-- checkbox -->
+    <p>
+        <!-- checkbox simples-->
+        <label>
+            <input type="checkbox" name="checkbox" value="checkbox">
+            Checkbox
+        </label>
+
+        <!-- checkbox obrigatoria-->
+        <label>
+            <input type="checkbox" name="checkboxMust" value="checkboxMust" required>
+            Checkbox Must
+        </label>
+    </p>
+
+    <p>
+        <!-- put "checked" to pre-select one option-->
+        Radio
+        <label for="feminino">
+            <input type="radio" name="genero" id="feminino" value="feminino">
+            Feminino
+        </label>
+        <label for="masculino">
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            Masculino
+        </label>
+    </p>
+
+
+    <!-- use "value" to put an option by default-->
+    <p>
+        DATA
+        <label for="date">
+            <input type="date" name="date" id="date">
+        </label>
+    </p>
+
+
+    <p>
+        TIME
+        <label for="time">
+            <input type="time" name="time" id="time">
+        </label>
+    </p>
+    <p>
+        COLOR
+        <label for="color">
+            <input type="color" name="color" id="color">
+    </p>
+    <p>
+        <label for="email"> 
+            <input type="email" name="email" id="email" placeholder="Email:">
+        </label>
+    </p>
+    <p>
+        <label for="file">
+            <!-- use "accept" to specify what kind of files are accepted, image/* to get all images-->
+            <input type="file" name="file" id="file" accept=".png, .svg, image/*">
+        </label>
+    </p>
+    <p>
+        <label for="number">
+            <input type="number" name="number" id="number" min="10" max="50">
+        </label>
+    </p>
+    <p>
+        <label for="password">
+            <input type="password" name="password" id="password" placeholder="Password:">
+        </label>
+    </p>
+    <p>
+        <label for="range">
+            <input type="range" name="range" id="range" min="0" max="100" step="5">
+        </label>
+    </p>
+    <!-- used to search inside the own website -->
+    <p>
+        <label for="search">
+            <input type="search" name="search" id="search" placeholder="Search:">
+        </label>
+    </p>
+
+    <!--choose between options-->
+    <p>
+        <label for="select">selecione</label>
+        <select id="select" name="select">
+            <!--it comes pre selected with "selected"; it comes disabled with "disabled"-->
+            <option value="option1" label="option1" ></option>
+            <option value="option2" label="option2" selected></option>
+            <option value="option3" label="option3" disabled></option>
+            <option value="option4" label="option4"></option>
+            <option value="option5" label="option5"></option>
+            <option value="option6" label="option6"></option>
+        </select>
+    </p>
+
+
+
+</body>
+
+</html>
