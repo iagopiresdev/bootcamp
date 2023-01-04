@@ -6,3 +6,5 @@ To commit: git commit -m "(explain what has been done)"
 
 To update on github: git push -u origin main
 
+to merge branches, first go to the branch you want to receive the merge and then merge: git merge tester
+
