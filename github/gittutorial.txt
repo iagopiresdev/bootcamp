@@ -1,0 +1,8 @@
+Create a new repository: git remote add origin (link)
+git push origin main
+
+To save an alteration: git add (file changed) or git add . 
+To commit: git commit -m "(explain what has been done)"
+
+To update on github: git push -u origin main
+
