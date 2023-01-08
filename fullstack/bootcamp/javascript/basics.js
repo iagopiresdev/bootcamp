@@ -12,7 +12,7 @@ const idadeConst = 18;
 //string
 let nome = 'Iago Santiago Pires';
 
-//list
+//array
 let hobbies = ['cozinhar', 'jogar'];
 
 //object
