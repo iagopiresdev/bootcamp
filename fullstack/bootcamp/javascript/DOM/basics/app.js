@@ -24,6 +24,9 @@ document.querySelectorAll('selector') //returns a collection of elements that ma
 /*element*/.append('element') //inserts the specified element as the last child of the element
 /*element*/.prepend('element') //inserts the specified element as the first child of the element
 /*element*/.before('element') //inserts the specified element as the previous sibling of the element
+/*element*/.after('element') //inserts the specified element as the next sibling of the element
+/*element*/.innerHTML = 'HTML element' //inserts the specified HTML element as the last child of the element
+
 
 //Remove elements from the DOM
 /*element*/.remove() //removes the element
