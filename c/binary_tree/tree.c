@@ -26,12 +26,28 @@ node *insert_tree(node *root, int data){
     }
 }
 
+void print_tree(node *root){
+    if(root){
+        print_tree(root->left);
+        printf("%d ", root->data);
+        print_tree(root->right);
+    }
+}
+
 int main(){
     node* root = NULL;
 
     root = insert_tree(root, 10);
-    printf("%d", root->data);
-    printf("\n");
+    insert_tree(root, 15);
+    insert_tree(root, 35);
+    insert_tree(root, 55);
+    insert_tree(root, 5);
+    insert_tree(root, 95);
+    insert_tree(root, 45);
+    insert_tree(root, 88);
+    insert_tree(root, 90);
+
+    print_tree(root);
 
 return 0;
 }
