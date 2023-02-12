@@ -8,3 +8,4 @@ To update on github: git push -u origin main
 
 to merge branches, first go to the branch you want to receive the merge and then merge: git merge tester
 
+https://rogerdudler.github.io/git-guide/index.pt_BR.html
